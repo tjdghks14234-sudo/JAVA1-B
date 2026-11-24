@@ -1,0 +1,14 @@
+void main() {
+    final int TITLE = 0;
+    final int AUTHOR = 1;
+    String[][] books = new String[][]{
+            {"어서와 JAVA는 처음이지", "천인국"},
+            {"쉽게배우는 자료구조", "윤병로"}};
+    int[] pages = new int[]{230, 330};
+    float[] price = new float[]{23000.0f, 32000.0f};
+
+    for (int i = 0; i < books.length; i++) {
+        System.out.printf(" %s\n\t 저자 : %s\n\t 페이지 수 : %,d 쪽\n\t 가격 : %,.0f 원\n\n",
+        books[i][TITLE], books[i][AUTHOR], pages[i], price[i]);
+    }
+}
